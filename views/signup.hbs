@@ -1,11 +1,12 @@
 <form action="/signup" method="POST">
 	<label for="userName"> username: </label>
-	<input type="text" name="userName">
+	<input type="text" name="userName" required>
 <br>
 	<label for="email">email: </label>
-    <input type="email" name="email"></input>
+    <input type="email" name="email" required>
 <br>
 	<label for="password">password: </label>
-    <input type="password" name="password"></input>
+    <input type="password" name="password" required>
     <input type="submit"></input>
 </form>
+<p>{{err}}</p>

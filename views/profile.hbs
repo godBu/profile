@@ -1,2 +1,6 @@
-{{ log user }}
-<h1>{{ user.userName }}'s prof</h1>
+{{!-- {{ log user }} --}}
+{{#if err}}
+	<p>{{err}}</p>
+{{else}}
+	<h1>Welcome to {{user.userName}}'s profile</h1>
+{{/if}} 

@@ -5,11 +5,11 @@
 const {Schema, model} = require('mongoose');
 
 let user = new Schema({
-    userName: {type: String, required: true, unique: false},
-    email: {type: String, required: true, unique: false},
-    password: {type: String, required: true, unique: false},
+    userName: {type: String, required: true, unique: true},
+    email: {type: String, required: true, unique: true},
+    password: {type: String, required: true, unique: true},
 }, {
-    toObject: {
+    toObject: { // converts mongoose document to js
         virtuals: true
     }
 });
